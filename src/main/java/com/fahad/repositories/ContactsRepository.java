@@ -1,0 +1,1 @@
+package com.fahad.repositories;import com.fahad.entityclasses.Contact;import org.springframework.data.jpa.repository.JpaRepository;import java.util.List;public interface ContactsRepository extends JpaRepository<Contact, Long> {    public List<Contact> findByUser_Id(Long id);}
